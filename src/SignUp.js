@@ -53,7 +53,7 @@ const SignUp = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 className="pass center"
                 placeholder="Choose Your Password"
-                style={emailInvalid ? { border: "1px solid red" } : {}}
+                style={passwordInvalid ? { border: "1px solid red" } : {}}
                 onBlur={() => setPasswordtouched(true)} />
             {passwordInvalid && <p className="errormsg center">password should be greater then 5 character</p>}
         </div>
